@@ -5,7 +5,7 @@ const app = express();
 
 // configure express to use Pug
 app.set('view engine', 'pug');
-app.set('view', 'views'); // default
+app.set('views', 'views'); // default
 
 // use body parser
 app.use(bodyParser.urlencoded({extended: false}));

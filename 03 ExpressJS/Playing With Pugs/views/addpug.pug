@@ -1,0 +1,9 @@
+extends layouts/navbar.pug
+
+block content
+    main
+        form.product-form(action="/add-pug", method="POST")
+            .form-control
+                label(for="title") Item
+                input(type="text", name="item")#item
+            button.btn(type="submit") Add Product

@@ -1,0 +1,10 @@
+extends layouts/navbar.pug
+
+block content
+    main 
+        if products.length > 0
+            ul
+                each product in products
+                    li #{product.item}
+        else 
+            p We've got no pugs.
