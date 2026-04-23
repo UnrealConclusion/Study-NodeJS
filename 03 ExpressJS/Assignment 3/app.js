@@ -6,6 +6,9 @@ const app = express();
 // statically serve static files
 app.use(express.static(path.join(__dirname, 'public')));
 
+// import and mount routes 
+const userRoutes = require('./routes/users');
+app.use(userRoutes);
 
 // home page
 app.get('/', (req, res, next) => {
