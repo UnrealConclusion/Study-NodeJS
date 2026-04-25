@@ -1,0 +1,67 @@
+/* NavBar Stuff */
+
+.navbar {
+    display: flex;
+    justify-content: start;
+    background-color: #333333;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+}
+
+.navbar ul li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  background-color: #111111;
+}
+
+.navbar ul li a.active {
+  background-color: #04AA6D;
+}
+
+.navbar ul li {
+  border-right: 1px solid #bbbbbb;
+}
+
+.navbar ul li:last-child {
+  border-right: none;
+}
+
+body {
+  margin: 0;
+  background-color: #bbbbbb;
+}
+
+/* 404 Page */
+
+.page-404 {
+  display: flex;
+  justify-content: center;
+}
+
+/* Add Pug Page */
+form {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+form button {
+  margin-left: 10px;
+}
+
+form label {
+  padding: 10px;
+}
