@@ -8,7 +8,6 @@ router.get('/add-product', (request, response, next) => {
   response.render('addproduct', 
 	  { 
 		title: 'Add Product', 
-		page: 'product',
 		layout: 'main',
 		activeShop: false,
 		activeAdd: true
@@ -26,7 +25,6 @@ router.use('/', (request, response, next) => {
   response.render('404', 
 	{
 		title: "Not Found", 
-		page: '404',
 		layout: 'main',
 		activeShop: false,
 		activeAdd: false
