@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
-    <!-- you can add Bootstrap/CSS here later -->
+    <link rel="stylesheet", href="/css/styles.css">
 </head>
 <body>
     <header>
-        <nav> <!-- your navigation can go here --> </nav>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/" {{#if activeShop}} class="active" {{/if}}>Home</a></li>
+                <li><a href="/add-product" {{#if activeAdd}} class="active" {{/if}}>Add Product</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        {{{body}}}   <!-- ←←← THIS LINE IS REQUIRED -->
+        {{{body}}}   <!-- Plcaeholder for Content -->
     </main>
 
-    <footer>
-        <p>&copy; My Shop</p>
-    </footer>
 </body>
 </html>

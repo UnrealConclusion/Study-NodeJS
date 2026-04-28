@@ -1,4 +1,9 @@
-<!DOCTYPE html>
-<body>
-    <p>Hello shop <a href="/add-product">click here</a></p>
-</bod>
+{{#if hasProducts}} 
+    <ul>
+        {{#each products}} 
+            <li>{{this.item}}</li>
+        {{/each}}
+    </ul>
+{{else}} 
+    <p>We've got nothing.</p>
+{{/if}}
