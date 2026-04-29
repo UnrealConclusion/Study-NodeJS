@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><% title %></title>
+    <link rel="stylesheet", href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <%- include('partials/navbar', {page: 'product'}) %>
+    </header>
+
+    <main>
+        <form class="product-form form-control" action="/add-product" method="POST">
+            <label for="item">Item</label>
+            <input type="text" name="item" id="item">
+            <button class="btn" type="submit">Add Product</button>
+        </form>
+    </main>
+
+</body>
+</html>
